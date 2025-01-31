@@ -1,0 +1,130 @@
+                                                       ___  ____  ____  ____  ____(R)
+                                                      /__    /   ____/   /   ____/   
+                                                     ___/   /   /___/   /   /___/    
+                                                       Statistics/Data analysis      
+      
+      -------------------------------------------------------------------------------
+            name:  <unnamed>
+             log:  /Users/HLM mixed effects output.smcl
+        log type:  smcl
+       opened on:  31 Jan 2025, 17:14:02
+      
+     1 . use "math_long.dta"
+      
+     2 . mixed math time retained c.time#c.retained ||id:time, residual(independent, b
+      > y(time))
+      
+      Obtaining starting values by EM ...
+      
+      Performing gradient-based optimization: 
+      Iteration 0:  Log likelihood =  -1617.439  
+      Iteration 1:  Log likelihood = -1600.1032  
+      Iteration 2:  Log likelihood = -1599.7694  
+      Iteration 3:  Log likelihood = -1599.7685  
+      Iteration 4:  Log likelihood = -1599.7685  
+      
+      Computing standard errors ...
+      
+      Mixed-effects ML regression                         Number of obs    =   1,500
+      Group variable: id                                  Number of groups =     300
+                                                          Obs per group:
+                                                                       min =       5
+                                                                       avg =     5.0
+                                                                       max =       5
+                                                          Wald chi2(3)     = 3732.93
+      Log likelihood = -1599.7685                         Prob > chi2      =  0.0000
+      
+      ------------------------------------------------------------------------------
+              math | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
+      -------------+----------------------------------------------------------------
+              time |   .7641411    .014305    53.42   0.000     .7361039    .7921783
+          retained |  -1.192581   .1178072   -10.12   0.000    -1.423479   -.9616829
+                   |
+            c.time#|
+        c.retained |   .1126452   .0343594     3.28   0.001      .045302    .1799885
+                   |
+             _cons |  -1.443817   .0490471   -29.44   0.000    -1.539947   -1.347686
+      ------------------------------------------------------------------------------
+      
+      ------------------------------------------------------------------------------
+        Random-effects parameters  |   Estimate   Std. err.     [95% conf. interval]
+      -----------------------------+------------------------------------------------
+      id: Independent              |
+                         var(time) |   .0280665   .0039764      .0212615    .0370496
+                        var(_cons) |   .4182306    .046387      .3365169    .5197861
+      -----------------------------+------------------------------------------------
+      Residual: Independent,       |
+          by time                  |
+                         0: var(e) |   .3103618   .0428121       .236838    .4067102
+                         1: var(e) |   .2923392   .0323631      .2353183     .363177
+                         2: var(e) |    .397721   .0384991      .3289901    .4808108
+                         3: var(e) |   .2189722   .0258805      .1736941    .2760534
+                         4: var(e) |   .1525454   .0303569       .103278    .2253151
+      ------------------------------------------------------------------------------
+      LR test vs. linear model: chi2(6) = 930.56                Prob > chi2 = 0.0000
+      
+      Note: LR test is conservative and provided only for reference.
+      
+     3 . 
+     4 . 
+     5 . mixed math retained c.time#c.retained, nocons ||id:time, residual(independent
+      > , by(time))
+      
+      Obtaining starting values by EM ...
+      
+      Performing gradient-based optimization: 
+      Iteration 0:  Log likelihood = -2172.9706  
+      Iteration 1:  Log likelihood =  -2149.122  
+      Iteration 2:  Log likelihood = -2129.4633  
+      Iteration 3:  Log likelihood = -2128.3571  
+      Iteration 4:  Log likelihood = -2128.1969  
+      Iteration 5:  Log likelihood = -2128.1964  
+      Iteration 6:  Log likelihood = -2128.1964  
+      
+      Computing standard errors ...
+      
+      Mixed-effects ML regression                          Number of obs    =  1,500
+      Group variable: id                                   Number of groups =    300
+                                                           Obs per group:
+                                                                        min =      5
+                                                                        avg =    5.0
+                                                                        max =      5
+                                                           Wald chi2(2)     = 228.59
+      Log likelihood = -2128.1964                          Prob > chi2      = 0.0000
+      
+      ------------------------------------------------------------------------------
+              math | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
+      -------------+----------------------------------------------------------------
+          retained |  -2.447233   .1899437   -12.88   0.000    -2.819516    -2.07495
+                   |
+            c.time#|
+        c.retained |    .831486   .0913312     9.10   0.000     .6524803    1.010492
+      ------------------------------------------------------------------------------
+      
+      ------------------------------------------------------------------------------
+        Random-effects parameters  |   Estimate   Std. err.     [95% conf. interval]
+      -----------------------------+------------------------------------------------
+      id: Independent              |
+                         var(time) |   .3967388   .0365964      .3311213    .4753595
+                        var(_cons) |   1.628945   .1603304      1.343155    1.975543
+      -----------------------------+------------------------------------------------
+      Residual: Independent,       |
+          by time                  |
+                         0: var(e) |   .7522411   .0867303      .6000909    .9429682
+                         1: var(e) |   .2089901   .0329044      .1534999    .2845398
+                         2: var(e) |   .3151679   .0306078      .2605414    .3812477
+                         3: var(e) |   .1055071   .0269974      .0638961    .1742163
+                         4: var(e) |   .4139662   .0642428      .3053995    .5611275
+      ------------------------------------------------------------------------------
+      LR test vs. linear model: chi2(6) = 969.28                Prob > chi2 = 0.0000
+      
+      Note: LR test is conservative and provided only for reference.
+      
+     6 . 
+     7 . 
+     8 . log close
+            name:  <unnamed>
+             log:  /Users/HLM mixed effects output.smcl
+        log type:  smcl
+       closed on:  31 Jan 2025, 17:15:25
+      -------------------------------------------------------------------------------
