@@ -10,7 +10,9 @@
        opened on:  31 Jan 2025, 17:01:07
       
      1 . use "math_wide.dta"
-      
+
+############# Figure 3. No Specification of the Latent Intercepts/means for the Growth Factors###########
+
      2 . sem (retained -> intercept, ) (retained -> slope, ) (intercept@1 -> math0, ) 
       > (intercept@1 -> math1, ) (intercept@1 -> math2, ) (intercept@1 -> math3, ) (i
       > ntercept@1 -> math4, ) (slope@1 -> math1, ) (slope@2 -> math2, ) (slope@3 -> 
@@ -103,6 +105,9 @@
       LR test of model vs. saturated: chi2(16) = 1239.05         Prob > chi2 = 0.0000
       
      3 . 
+
+############# Figure 4. Model with Latent Intercepts of Both Growth Factors Constrained to Zeros ########
+
      4 . sem (retained -> intercept, ) (retained -> slope, ) (intercept <- _cons@0, ) 
       > (intercept@1 -> math0, ) (intercept@1 -> math1, ) (intercept@1 -> math2, ) (i
       > ntercept@1 -> math3, ) (intercept@1 -> math4, ) (slope <- _cons@0, ) (slope@1
@@ -195,6 +200,9 @@
       LR test of model vs. saturated: chi2(16) = 1239.05         Prob > chi2 = 0.0000
       
      5 . 
+
+####### Figure 7. Model with Specification of the Intercepts for Both Latent Growth Factors#######
+
      6 . sem (retained -> intercept, ) (retained -> slope, ) (intercept <- _cons@a, ) 
       > (intercept@1 -> math0, ) (intercept@1 -> math1, ) (intercept@1 -> math2, ) (i
       > ntercept@1 -> math3, ) (intercept@1 -> math4, ) (slope <- _cons@b, ) (slope@1
@@ -291,6 +299,9 @@
       LR test of model vs. saturated: chi2(14) = 182.19          Prob > chi2 = 0.0000
       
      7 . 
+
+###### Figure 8. LGM Specification with the Default SEM Builder (No Intercept Parameters Specified) #########
+
      8 . sem (retained -> intercept, ) (retained -> slope, ) (intercept@1 -> math0, ) 
       > (intercept@1 -> math1, ) (intercept@1 -> math2, ) (intercept@1 -> math3, ) (i
       > ntercept@1 -> math4, ) (slope@1 -> math1, ) (slope@2 -> math2, ) (slope@3 -> 
