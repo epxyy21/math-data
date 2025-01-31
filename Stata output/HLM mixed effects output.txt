@@ -67,9 +67,9 @@
       
       Note: LR test is conservative and provided only for reference.
       
-     3 . ########### Model B without Estimating the Intercepts ######################
-     4 . ##########equation(2) 〖math〗_ti=β_01 〖retained〗_i+β_11 〖〖(time〗_ti*retained〗_i 〖)+U〗_0i+〖U_1i 〖time〗_ti+e〗_ti
-     5 . mixed math retained c.time#c.retained, nocons ||id:time, residual(independent
+     ########### Model B without Estimating the Intercepts ######################
+     ##########equation(2) 〖math〗_ti=β_01 〖retained〗_i+β_11 〖〖(time〗_ti*retained〗_i 〖)+U〗_0i+〖U_1i 〖time〗_ti+e〗_ti
+     3 . mixed math retained c.time#c.retained, nocons ||id:time, residual(independent
       > , by(time))
       
       Obtaining starting values by EM ...
@@ -122,9 +122,9 @@
       
       Note: LR test is conservative and provided only for reference.
       
-     6 . 
-     7 . 
-     8 . log close
+     4 . 
+     5 . 
+     6 . log close
             name:  <unnamed>
              log:  /Users/HLM mixed effects output.smcl
         log type:  smcl
