@@ -10,6 +10,8 @@
        opened on:  31 Jan 2025, 17:14:02
       
      1 . use "math_long.dta"
+########### Model A-----True model ######################
+##########equation(1)〖math〗_ti=β_00+〖β_10 time〗_ti+β_01 〖retained〗_i+β_11 〖〖(time〗_ti*retained〗_i 〖)+U〗_0i+〖U_1i 〖time〗_ti+e〗_ti
       
      2 . mixed math time retained c.time#c.retained ||id:time, residual(independent, b
       > y(time))
@@ -65,8 +67,8 @@
       
       Note: LR test is conservative and provided only for reference.
       
-     3 . 
-     4 . 
+     3 . ########### Model B without Estimating the Intercepts ######################
+     4 . ##########equation(2) 〖math〗_ti=β_01 〖retained〗_i+β_11 〖〖(time〗_ti*retained〗_i 〖)+U〗_0i+〖U_1i 〖time〗_ti+e〗_ti
      5 . mixed math retained c.time#c.retained, nocons ||id:time, residual(independent
       > , by(time))
       
